@@ -3,7 +3,7 @@ import time
 import pandas as pd
 
 def extract_article_info(link):
-    '''
+    """
     Takes an article URL, utilizes the Python newspaper library to extract features.
 
     There are links that the Newspaper class is unable to identify -- for this purpose, we return a
@@ -11,7 +11,7 @@ def extract_article_info(link):
 
     input (string): url for article
     output (dictionary): dictionary with extracted features
-    '''
+    """
 
     article_dict = {}
     try:
@@ -66,12 +66,11 @@ def extract_article_info(link):
     return article_dict
 
 
-
 def dict_to_df(dictionary):
-    '''
+    """
     convert dictionary to dataframe
     input (dictionary): dictionary
     output (dataframe): dataframe
-    '''
+    """
 
     return pd.DataFrame(dictionary)
