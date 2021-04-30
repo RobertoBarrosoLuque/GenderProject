@@ -2,6 +2,10 @@ import newspaper
 import time
 import pandas as pd
 
+# Caitlin: had to add to get the download article to work for me
+import nltk
+nltk.download('punkt')
+
 def extract_article_info(link):
     """
     Takes an article URL, utilizes the Python newspaper library to extract features.
