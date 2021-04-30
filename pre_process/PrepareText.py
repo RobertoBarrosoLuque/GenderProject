@@ -16,7 +16,6 @@ def clean_raw_text(raw_texts):
     :param raw_texts: list of raw texts to pre process.
     """
 
-    common_stopwords = ["THE PRESIDENT:", "(Applause.)", "(applause)", "(Laughter.)"]
     stopwords = [x.lower() for x in common_stopwords]
     
     clean_texts = []
