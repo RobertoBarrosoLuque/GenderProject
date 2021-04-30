@@ -4,6 +4,7 @@ import json
 import datetime
 import requests
 from pathlib import Path
+from typing import Dict, Optional, Sequence, Tuple
 import pandas as pd
 
 from bs4 import BeautifulSoup
@@ -13,13 +14,13 @@ from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
 from htmldate import find_date
 
-from get_information import extract_article_info
+from web_scraping.get_information import extract_article_info
 
 GUARDIAN_API_KEY = os.environ.get("GUARDIAN_API_KEY")
 
 # copied here from mex_scraping_functions.py for now to add in incognito options
 # move to helper misc_helper_functions.py? 
-def selenium_driver_helper(main_url):
+def selenium_driver_helper(main_url: str):
     """
     Create driver object using chrome driver and selenium.
     :param main_url: string with link to main website
@@ -37,7 +38,7 @@ def selenium_driver_helper(main_url):
     return driver
 
 # move to helper misc_helper_functions.py? 
-def call_api_helper(params, url):
+def call_api_helper(params: Dict[str, str], url: str):
     '''
     Simple requests helper functon
     input:
@@ -48,7 +49,7 @@ def call_api_helper(params, url):
     r = requests.get(url, params)
     return json.loads(r.content)
 
-def get_guardian_articles_by_term(search_term):
+def get_guardian_articles_by_term(search_term: str):
     '''
     Call guardian articles api for a specific search term
     input:
@@ -74,8 +75,12 @@ def get_guardian_articles_by_term(search_term):
     df['search_term'] = search_term
     return df
 
-def scrape_the_times(keyword):
+def scrape_the_times(keyword: str):
     '''
+    Scrape links of articles from The Times based on a keyword.
+    input:
+        keyword: string to be searched
+    returns: list of strings of article links
     '''
     all_links = []
     url = 'https://www.thetimes.co.uk/search?source=nav-desktop&filter=past_year&q=' + keyword
@@ -94,11 +99,11 @@ def scrape_the_times(keyword):
     xpath_first_page = '/html/body/section/div/div[3]/ul/li/a'
     xpath_other_pages = '/html/body/section/div/div[3]/ul/li[2]/a'
 
-    if click_next_page(driver, xpath_first_page):
+    if click_selenium_helper(driver, xpath_first_page):
         all_links.extend(times_scraper_helper(driver))
         time.sleep(3)
         page = 2
-        while click_next_page(driver, xpath_other_pages) and page < 50:
+        while click_selenium_helper(driver, xpath_other_pages) and page < 50:
             all_links.extend(times_scraper_helper(driver))
             page += 1
             time.sleep(3)
@@ -108,6 +113,10 @@ def scrape_the_times(keyword):
 
 def times_scraper_helper(driver):
     '''
+    BeautifulSoup helper function
+    input: 
+        driver: webdriver object
+    returns: list of article links (or empty list if no articles are found)
     '''
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     rows = soup.find_all("a", class_=None)
@@ -117,8 +126,14 @@ def times_scraper_helper(driver):
         return []
 
 
-def click_next_page(driver, xpath):
+def click_selenium_helper(driver, xpath: str):
     '''
+    Selenium helper function to click link
+    inputs:
+        driver: Selenium webdriver object
+        xpath: string, the xpath of the button to click
+    returns:
+        True if it successfully clicks the button, False otherwise
     '''
     try:
         driver.find_elements_by_xpath(xpath)[0].click()
