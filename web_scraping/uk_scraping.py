@@ -4,7 +4,7 @@ import json
 import datetime
 import requests
 from pathlib import Path
-from typing import Dict, Optional, Sequence, Tuple
+from typing import Dict, Optional, List, Tuple
 import pandas as pd
 
 from bs4 import BeautifulSoup
@@ -49,6 +49,50 @@ def call_api_helper(params: Dict[str, str], url: str):
     r = requests.get(url, params)
     return json.loads(r.content)
 
+def times_scraper_helper(driver):
+    '''
+    BeautifulSoup helper function
+    input: 
+        driver: webdriver object
+    returns: list of article links (or empty list if no articles are found)
+    '''
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+    rows = soup.find_all("a", class_=None)
+    if rows:
+        return ['https://www.thetimes.co.uk' + x.get("href") for x in rows]
+    else:
+        return []
+
+def sun_scraper_helper(driver):
+    '''
+    BeautifulSoup helper function
+    input: 
+        driver: webdriver object
+    returns: list of article links (or empty list if no articles are found)
+    '''
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+    rows = soup.find_all("a", class_="teaser-anchor teaser-anchor--search")
+    if rows:
+        return [x.get("href") for x in rows]
+    else:
+        return []
+
+
+def click_selenium_helper(driver, xpath: str):
+    '''
+    Selenium helper function to click link
+    inputs:
+        driver: Selenium webdriver object
+        xpath: string, the xpath of the button to click
+    returns:
+        True if it successfully clicks the button, False otherwise
+    '''
+    try:
+        driver.find_elements_by_xpath(xpath)[0].click()
+        return True
+    except:
+        return False
+
 def get_guardian_articles_by_term(search_term: str):
     '''
     Call guardian articles api for a specific search term
@@ -77,7 +121,7 @@ def get_guardian_articles_by_term(search_term: str):
 
 def scrape_the_times(keyword: str):
     '''
-    Scrape links of articles from The Times based on a keyword.
+    Scrape links of articles from The Times newspaper based on a keyword.
     input:
         keyword: string to be searched
     returns: list of strings of article links
@@ -93,12 +137,10 @@ def scrape_the_times(keyword: str):
 
     article_links = times_scraper_helper(driver)
     all_links.extend(article_links)
-
     time.sleep(5)
 
     xpath_first_page = '/html/body/section/div/div[3]/ul/li/a'
     xpath_other_pages = '/html/body/section/div/div[3]/ul/li[2]/a'
-
     if click_selenium_helper(driver, xpath_first_page):
         all_links.extend(times_scraper_helper(driver))
         time.sleep(3)
@@ -107,40 +149,43 @@ def scrape_the_times(keyword: str):
             all_links.extend(times_scraper_helper(driver))
             page += 1
             time.sleep(3)
-
     return all_links
 
 
-def times_scraper_helper(driver):
+def scrape_the_sun(keyword: str):
     '''
-    BeautifulSoup helper function
-    input: 
-        driver: webdriver object
-    returns: list of article links (or empty list if no articles are found)
+    Scrape links of articles from The Times based on a keyword.
+    input:
+        keyword: string to be searched
+    returns: list of strings of article links
     '''
-    soup = BeautifulSoup(driver.page_source, 'html.parser')
-    rows = soup.find_all("a", class_=None)
-    if rows:
-        return ['https://www.thetimes.co.uk' + x.get("href") for x in rows]
-    else:
-        return []
+    all_links = []
+    url = 'https://www.thesun.co.uk/?s=' + keyword
+    driver = selenium_driver_helper(url)
+    article_links = sun_scraper_helper(driver)
+    all_links.extend(article_links)
+    time.sleep(2)
 
+    for page in range(2, 51):
+        url = 'https://www.thesun.co.uk/page/{}/?s='.format(page) + keyword
+        if click_selenium_helper(driver, '//a[@href="'+url+'"]'):
+            all_links.extend(sun_scraper_helper(driver))
+            time.sleep(2)
+            if page%3==0:
+                time.sleep(4)
+    return all_links
 
-def click_selenium_helper(driver, xpath: str):
+def get_article_info_df(links: List[str]):
     '''
-    Selenium helper function to click link
+    Takes a list of article urls and returns a dataframe containing article info for all links
     inputs:
-        driver: Selenium webdriver object
-        xpath: string, the xpath of the button to click
-    returns:
-        True if it successfully clicks the button, False otherwise
+        links: list of strings, the article links
+    returns: pandas DataFrame containing article info for each link
     '''
-    try:
-        driver.find_elements_by_xpath(xpath)[0].click()
-        return True
-    except:
-        return False
-
+    list_of_dictionaries = []
+    for link in set(links):
+        list_of_dictionaries.append(extract_article_info(link))
+    return pd.DataFrame(list_of_dictionaries)    
 
 if __name__ == '__main__':
 
@@ -162,13 +207,18 @@ if __name__ == '__main__':
     mode, header = ('w', True)
     for keyword in keywords:
         times_links = scrape_the_times(keyword)
-
-        list_of_dictionaries = []
-        for link in set(times_links):
-            list_of_dictionaries.append(extract_article_info(link))
-
-        times_df = pd.DataFrame(list_of_dictionaries)
+        times_df = get_article_info_df(times_links)
         times_df['search_term'] = keyword
         times_df.to_csv(data_dir/'times_scraped.csv', mode=mode, header=header, index=False)
         mode, header = ('a', False)
+
+    # get the sun articles
+    mode, header = ('w', True)
+    for keyword in keywords:
+        sun_links = scrape_the_sun(keyword)
+        sun_df = get_article_info_df(sun_links)
+        sun_df['search_term'] = keyword
+        sun_df.to_csv(data_dir/'sun_scraped.csv', mode=mode, header=header, index=False)
+        mode, header = ('a', False)
+
 
