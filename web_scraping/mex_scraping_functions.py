@@ -9,6 +9,7 @@ from htmldate import find_date
 import datetime
 from web_scraping.get_information import extract_article_info
 import json
+import pickle
 
 
 def selenium_driver_helper(main_url):
@@ -151,10 +152,12 @@ if __name__ == '__main__':
 
     print()
     print("Finished extracting news information from all links")
-    with open('processed_articles.json', 'w') as fp:
-        print("Saving list of dictionaries to json file")
-        json.dump(list_of_dictionaries, fp)
-    print()
+    # open a file, where you ant to store the data
+    file = open('processed_dictionaries', 'wb')
+    # dump information to that file
+    pickle.dump(list_of_dictionaries, file)
+    # close the file
+    file.close()
 
     final_df = pd.DataFrame(list_of_dictionaries)
 
