@@ -1,7 +1,7 @@
 import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from selenium.common.exceptions import StaleElementReferenceException
+from selenium.common.exceptions import StaleElementReferenceException, ElementClickInterceptedException
 import os
 import time
 from webdriver_manager.chrome import ChromeDriverManager
@@ -10,6 +10,10 @@ import datetime
 from web_scraping.get_information import extract_article_info
 import json
 import pickle
+
+month_dict = {"enero": 1, "febrero": 2, "marzo": 3, "abril": 4, "mayo": 5, "junio": 6,
+              "julio": 7, "agosto": 8, "septiembre": 9, "octubre": 10, "noviembre": 11,
+              "diciembre": 12}
 
 
 def selenium_driver_helper(main_url):
@@ -26,12 +30,19 @@ def selenium_driver_helper(main_url):
     return driver
 
 
-def click_next_page(driver, xpath_string):
-    for button in driver.find_elements_by_xpath(xpath_string):
+def click_next_page(driver, xpath_string, specifics=None):
+    if specifics:
         try:
-            button.click()
-        except StaleElementReferenceException:
-            continue
+            driver.find_element_by_link_text(specifics).click()
+        except ElementClickInterceptedException:
+            return
+    else:
+        element_driver = driver.find_elements_by_xpath(xpath_string)
+        for button in element_driver:
+            try:
+                button.click()
+            except StaleElementReferenceException:
+                continue
 
 
 def crawl_el_universal(keyword):
@@ -117,23 +128,78 @@ def crawl_la_jornada(keyword):
         if not soup1.find_all('span', class_="next"):
             break
 
-    # links_df = pd.DataFrame(list(zip(all_links,  ["genero" for _ in all_links], ['LaJornada' for _ in all_links])),
-    #                        columns=['link', 'keyword', 'newspaper'])
+    return all_links
+
+
+def crawl_el_heraldo(keyword):
+    """
+    Crawler function to use El Heraldo search website to get relevant articles about
+    keyword.
+    :param keyword: string
+    :return all_links: list of links
+    """
+    main_link = "https://heraldodemexico.com.mx/noticias/buscar/?buscar=" + keyword
+    partial_link = "https://heraldodemexico.com.mx/"
+    driver = selenium_driver_helper(main_link)
+
+    date_now = datetime.date.today()
+    date_end = datetime.date(2020, 1, 1)
+
+    all_links = []
+    count = 0
+    while date_now > date_end:
+        soup1 = BeautifulSoup(driver.page_source, 'html.parser')
+        rows1 = soup1.find_all('div', class_="col-xs-4")
+
+        # get total number of hits found in search engine
+        if count == 0:
+            count_results = soup1.find_all('div', class_="alert alert-info")
+            num_hit = [int(word) for word in count_results[0].text.split() if word.isdigit()][0]
+            count = 1
+
+        article_links = [partial_link+x.find('a')["href"] for x in rows1]
+        all_links.extend(article_links)
+
+        # Get date
+        date_row = soup1.find_all('h3', class_="titulo-grupo")
+        if not date_row:
+            if not soup1.find_all('u', class_="pagination"):
+                break
+            continue
+        date_spanish = [tag.text for tag in date_row][-1].split()
+        date_string = str(month_dict[date_spanish[2]])+"/"+date_spanish[0]+"/"+date_spanish[-1]
+
+        date_now = pd.to_datetime(date_string)
+        print(f"Last article dated from: {date_now}")
+        print(f"Number of links processed so far: {len(all_links)}")
+
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(1)
+
+        click_next_page(driver, './/ul[@class = "pagination"]', "Siguiente")
+
+        # Check if this is the last page, if so break
+        if date_now < date_end or num_hit <= len(all_links):
+            break
+
 
     return all_links
 
 
 if __name__ == '__main__':
     keyword_list = ["violencia+genero", "asesinato+mujer","matrimonio+forzado",
-                    "aborto+forzado", "agresion+sexual", "violencia+domestica", "abuso+sexual", "feminicidio"]
+                    "aborto+forzado", "agresion+sexual", "violencia+domestica", "abuso+sexual",
+                    "feminicidio"]
 
     # choose one from ["Universal", "LaJornada"]
-    newspaper = "Universal"
+    newspaper = "Heraldo"
 
     if newspaper == "Universal":
         scrape_function = crawl_el_universal
     elif newspaper == "LaJornada":
         scrape_function = crawl_la_jornada
+    elif newspaper == "Heraldo":
+        scrape_function = crawl_el_heraldo
     else:
         raise NameError(f'No webscraper function for {newspaper}')
 
