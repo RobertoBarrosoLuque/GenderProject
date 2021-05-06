@@ -3,6 +3,8 @@ Function for pre processing text. These include tokenizing words, tokenizing sen
 These functions are based on those used in Computational Content Analysis lucem_illud module.
 """
 import spacy
+from gensim.parsing.preprocessing import STOPWORDS
+
 try:
     nlp_english = spacy.load("en")
 except OSError:
@@ -10,6 +12,40 @@ except OSError:
     # python -m spacy download en_core_news_sm
     # python -m spacy download es_core_news_sm
     nlp_english = spacy.load("en_core_web_sm")
+
+
+def clean_raw_text(raw_texts):
+    """
+    Clean text documents during pre-processing.
+    :param raw_texts: list of raw texts to pre process.
+    """
+    # common_stopwords = [] 
+    # stopwords = [x.lower() for x in common_stopwords]
+    
+    clean_texts = []
+    for text in raw_texts:
+        try:
+            clean_text = text.replace(" \'m", 
+                                    "'m").replace(" \'ll", 
+                                    "'ll").replace(" \'re", 
+                                    "'re").replace(" \'s",
+                                    "'s").replace(" \'re", 
+                                    "'re").replace(" n\'t", 
+                                    "n't").replace(" \'ve", 
+                                    "'ve").replace(" /'d", 
+                                    "'d").replace('\n','')
+            
+            clean_text = clean_text.rstrip(" ").rstrip(" ' ").replace("\xa0", "")
+            querywords = clean_text.split()
+            resultwords  = [word for word in querywords if word.lower() not in STOPWORDS]
+            final_text = ' '.join(resultwords)
+
+            clean_texts.append(final_text)
+        except AttributeError:
+            print("ERROR CLEANING")
+            # print(text)
+            continue
+    return clean_texts
 
 
 def word_tokenize(word_list, model=nlp_english, max_doc_sz=1500000):
