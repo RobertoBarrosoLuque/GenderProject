@@ -33,6 +33,17 @@ def remove_old_articles(df: pd.DataFrame):
     df['datetime'] = pd.to_datetime(df['datetime'])
     return df[df['datetime'] >= '2020-01-01']
 
+def clean_html_tags(df, col):
+    '''
+    Helper function to clean html tags from string in a column
+    inputs: 
+        df: pandas DataFrame 
+        col: string, column to have html tags stripped from
+    returns; pandas DataFrame with no html tags in col
+    '''
+    df[col].apply(lambda x: re.sub('<[^<]+?>', '', x))
+    return df
+
 if __name__ == '__main__':
 
     root = Path.cwd()
@@ -42,7 +53,7 @@ if __name__ == '__main__':
     # clean guardian data
     guardian_df = pd.read_csv(data_dir/"UK/guardian_scraped.csv")
     guardian_df_no_dups = drop_duplicates(guardian_df, 'id')
-    df_cleaned = clean_body_field(guardian_df_no_dups)
+    guardian_df_cleaned = clean_body_field(guardian_df_no_dups)
 
     guardian_df_cleaned.to_csv(data_dir/"UK/guardian_scraped_cleaned.csv", index=False)
 
