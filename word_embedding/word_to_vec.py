@@ -4,6 +4,7 @@ on the word2vec algorithm developed by Mikolov et al.
 See: https://arxiv.org/pdf/1310.4546.pdf for more info
 """
 import pandas as pd
+import numpy as np
 import gensim
 from pre_process.text_utils import *
 import spacy
@@ -12,6 +13,9 @@ from sklearn.manifold import TSNE
 import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
+from sentiment_analysis_spanish import sentiment_analysis
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+
 
 nlp_spanish = spacy.load("es_core_news_sm")
 nlp_english = spacy.load("en_core_web_sm")
@@ -56,6 +60,58 @@ class WEmbeddings:
     def __call__(self):
         self.tokenize_normalize()
         return self.create_embedding()
+
+
+def convert_to_neg_pos(score):
+    """
+    Apply linear conversion to change into -1 to 1 range.
+    :param score: float
+    :return: float
+    """
+    new_value = ((score - 0) / (1 - 0)) * (1 + 1) + -1
+    return round(new_value, 3)
+
+
+SentimentScorer_span = sentiment_analysis.SentimentAnalysisSpanish()
+SentimentScorer_eng = SentimentIntensityAnalyzer()
+
+
+def sentiment_score(word_list, lang):
+    """
+    Helper function to calculate sentiment associated with word_list
+    :param word_list: list of words to score
+    :param lang: string with en or es
+    :return sentiment: float with sentiment score for words
+    """
+    SentimentScorer_eng = SentimentIntensityAnalyzer()
+
+    if lang == 'es':
+        sentiment = convert_to_neg_pos(SentimentScorer_span.sentiment(" ".join(word_list)))
+    elif lang == 'en':
+        sentiment = SentimentScorer_eng.polarity_scores(" ".join(word_list))
+        sentiment = sentiment['compound']
+    else:
+        raise TypeError
+
+    return sentiment
+
+
+def extract_info_word2vec(word2vec_model, keyword, lang="en"):
+    """
+    Extract all relevant information for keyword in word2vec model.
+    :param word2vec_model: gensim word2vec model object
+    :param keyword: str with word of interest
+    :return rep_words: list closest words to keyword in embedding model based on cosine dist
+    :return sentiment: sentiment of closest words
+    """
+    try:
+        words_tupple = word2vec_model.wv.most_similar(keyword)
+        rep_words = [word for word, score in words_tupple]
+        sentiment = sentiment_score(rep_words, lang)
+    except KeyError:
+        rep_words, sentiment = np.nan, np.nan
+
+    return rep_words, sentiment
 
 
 def scatter_plot_helper(fig, results, words_of_interest):
