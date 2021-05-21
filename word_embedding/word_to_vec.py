@@ -86,7 +86,8 @@ def sentiment_score(word_list, lang):
     SentimentScorer_eng = SentimentIntensityAnalyzer()
 
     if lang == 'es':
-        sentiment = convert_to_neg_pos(SentimentScorer_span.sentiment(" ".join(word_list)))
+        sentiment_total = [SentimentScorer_span.sentiment(word) for word in word_list]
+        sentiment = convert_to_neg_pos(np.mean(sentiment_total))
     elif lang == 'en':
         sentiment = SentimentScorer_eng.polarity_scores(" ".join(word_list))
         sentiment = sentiment['compound']
