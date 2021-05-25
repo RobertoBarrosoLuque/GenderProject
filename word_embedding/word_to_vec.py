@@ -115,6 +115,18 @@ def extract_info_word2vec(word2vec_model, keyword, lang="en"):
     return rep_words, sentiment
 
 
+def analogy_solving(word2vec_model, positive, negative):
+    """
+    Function for semantic equations/word analogies.
+    :param word2vec_model: gensim word2vec model object
+    :param positive: list
+    :param negative: list
+    :return result: list of tuples
+    """
+    result = word2vec_model.most_similar(positive=positive, negative=negative)
+    return result
+
+
 def scatter_plot_helper(fig, results, words_of_interest):
     plt.sca(fig)
     sns.scatterplot(x=results[:, 0], y=results[:, 1])

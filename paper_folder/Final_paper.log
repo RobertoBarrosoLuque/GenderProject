@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.11.1)  20 MAY 2021 14:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.11.1)  24 MAY 2021 15:19
 entering extended mode
 **./Final_paper.tex
 (Final_paper.tex
@@ -309,30 +309,102 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \backup@length=\skip59
 \ar@cellbox=\box50
 )
+(C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip60
+\multirow@cntb=\count270
+\multirow@dima=\skip61
+\bigstrutjot=\dimen169
+)
+(C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks26
+\SOUL@lasttoken=\toks27
+\SOUL@cmds=\toks28
+\SOUL@buffer=\toks29
+\SOUL@token=\toks30
+\SOUL@spaceskip=\skip62
+\SOUL@ttwidth=\dimen170
+\SOUL@uldp=\dimen171
+\SOUL@ulht=\dimen172
+)
+(C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+(C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks31
+\minrowclearance=\skip63
+)
+\rownum=\count271
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/changepage\changepage.s
+ty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count272
+\cp@tempcnt=\count273
+)
+(C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/threeparttable\threepar
+ttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box51
+)
 (C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count270
-\l__pdf_internal_box=\box51
-) (Final_paper.aux)
+\l__kernel_color_stack_int=\count274
+\l__pdf_internal_box=\box52
+) (Final_paper.aux
+
+LaTeX Warning: Label `fig:my-label1' multiply defined.
+
+
+LaTeX Warning: Label `fig:my-label1' multiply defined.
+
+
+LaTeX Warning: Label `tab: ' multiply defined.
+
+
+LaTeX Warning: Label `fig:my-label1' multiply defined.
+
+
+LaTeX Warning: Label `fig:my-label1' multiply defined.
+
+
+LaTeX Warning: Label `fig:my-label1' multiply defined.
+
+)
 \openout1 = `Final_paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -400,7 +472,7 @@ LaTeX Font Info:    ... okay on input line 59.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 59.
+Package hyperref Info: Link coloring OFF on input line 62.
 (C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -411,23 +483,23 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count271
+\c@section@level=\count275
 )
-LaTeX Info: Redefining \ref on input line 59.
-LaTeX Info: Redefining \pageref on input line 59.
-LaTeX Info: Redefining \nameref on input line 59.
+LaTeX Info: Redefining \ref on input line 62.
+LaTeX Info: Redefining \pageref on input line 62.
+LaTeX Info: Redefining \nameref on input line 62.
  (Final_paper.out) (Final_paper.out)
 \@outlinefile=\write3
 \openout3 = `Final_paper.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 59.
+LaTeX Info: Redefining \microtypecontext on input line 62.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 59.
+LaTeX Info: Redefining \showhyphens on input line 62.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -438,17 +510,17 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 (C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count272
-\scratchdimen=\dimen169
-\scratchbox=\box52
-\nofMPsegments=\count273
-\nofMParguments=\count274
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count275
-\MPscratchDim=\dimen170
-\MPnumerator=\count276
-\makeMPintoPDFobject=\count277
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count276
+\scratchdimen=\dimen173
+\scratchbox=\box53
+\nofMPsegments=\count277
+\nofMParguments=\count278
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count279
+\MPscratchDim=\dimen174
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
+\everyMPtoPDFconversion=\toks33
 )
 (C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -460,7 +532,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
 
 
 (C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -469,7 +541,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
 
 
 (C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -479,7 +551,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
-1.
+4.
 
 (C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -493,27 +565,122 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 {C:/Users/robal/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3]
-[4] [5] (Final_paper.aux)
+<figures/thetimeswe.png, id=52, 1524.69624pt x 951.555pt>
+File: figures/thetimeswe.png Graphic file (type png)
+<use figures/thetimeswe.png>
+Package pdftex.def Info: figures/thetimeswe.png  used on input line 124.
+(pdftex.def)             Requested size: 397.48499pt x 248.06636pt.
+<figures/dawnwe.png, id=54, 1531.7225pt x 951.555pt>
+File: figures/dawnwe.png Graphic file (type png)
+<use figures/dawnwe.png>
+Package pdftex.def Info: figures/dawnwe.png  used on input line 130.
+(pdftex.def)             Requested size: 397.48499pt x 246.91931pt.
+<figures/sentimentfig.png, id=55, 1352.05125pt x 526.96875pt>
+File: figures/sentimentfig.png Graphic file (type png)
+<use figures/sentimentfig.png>
+Package pdftex.def Info: figures/sentimentfig.png  used on input line 136.
+(pdftex.def)             Requested size: 397.48499pt x 154.91568pt.
+
+[4pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.139 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.139 
+       <./figures/thetimeswe.png> <./figures/dawnwe.png>]
+Overfull \hbox (33.1035pt too wide) in paragraph at lines 150--165
+ [][] 
+ []
+
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.170 \newpage
+               <./figures/sentimentfig.png>]
+<figures/leftwe.png, id=76, 1504.62125pt x 2759.30875pt>
+File: figures/leftwe.png Graphic file (type png)
+<use figures/leftwe.png>
+Package pdftex.def Info: figures/leftwe.png  used on input line 180.
+(pdftex.def)             Requested size: 354.6651pt x 650.41653pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Overfull \vbox (49.3874pt too high) has occurred while \output is active []
+
+
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.183 
+       <./figures/leftwe.png>]
+<figures/centerwe.png, id=92, 1504.62125pt x 2759.30875pt>
+File: figures/centerwe.png Graphic file (type png)
+<use figures/centerwe.png>
+Package pdftex.def Info: figures/centerwe.png  used on input line 187.
+(pdftex.def)             Requested size: 354.6651pt x 650.41653pt.
+
+Overfull \vbox (20.10146pt too high) has occurred while \output is active []
+
+
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.190 
+       <./figures/centerwe.png>]
+<figures/rightwe.png, id=99, 1504.62125pt x 2759.30875pt>
+File: figures/rightwe.png Graphic file (type png)
+<use figures/rightwe.png>
+Package pdftex.def Info: figures/rightwe.png  used on input line 193.
+(pdftex.def)             Requested size: 354.6651pt x 650.41653pt.
+
+Overfull \vbox (20.10146pt too high) has occurred while \output is active []
+
+
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.196 
+       <./figures/rightwe.png>] [11] (Final_paper.aux)
 Package rerunfilecheck Info: File `Final_paper.out' has not changed.
-(rerunfilecheck)             Checksum: 786F01C30EA9DC98ACCEE8337EC1E58D;274.
+(rerunfilecheck)             Checksum: 28035083C91CA02D5A0F9D0B6DC19772;455.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 8222 strings out of 480224
- 132589 string characters out of 2880103
- 457620 words of memory out of 3000000
- 24584 multiletter control sequences out of 15000+200000
- 558447 words of font info for 70 fonts, out of 3000000 for 9000
+ 9132 strings out of 480224
+ 144661 string characters out of 2880103
+ 485290 words of memory out of 3000000
+ 25429 multiletter control sequences out of 15000+200000
+ 564494 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,8n,77p,253b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,11n,77p,410b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/robal/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C
 :\Users\robal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.
-pk><C:/Users/robal/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.p
-fb><C:/Users/robal/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.p
-fb><C:/Users/robal/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.
-pfb>
-Output written on Final_paper.pdf (5 pages, 53744 bytes).
+pk><C:/Users/robal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb><C:/Users/robal/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmmi7.pfb><C:/Users/robal/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Users/robal/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/robal/AppData/Local/Programs/MiK
+TeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/robal/AppData/Local/Programs/MiK
+TeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/robal/AppData/Local/Programs/MiK
+TeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Final_paper.pdf (11 pages, 3612419 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
- 18473 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 166 PDF objects out of 1000 (max. 8388607)
+ 29 named destinations out of 1000 (max. 500000)
+ 19551 words of extra memory for PDF output out of 20736 (max. 10000000)
 
