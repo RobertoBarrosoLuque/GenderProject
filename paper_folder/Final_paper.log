@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.11.1)  24 MAY 2021 15:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.11.1)  25 MAY 2021 09:56
 entering extended mode
 **./Final_paper.tex
 (Final_paper.tex
@@ -375,6 +375,9 @@ LaTeX Warning: Label `fig:my-label1' multiply defined.
 LaTeX Warning: Label `fig:my-label1' multiply defined.
 
 
+LaTeX Warning: Label `eu_eqn' multiply defined.
+
+
 LaTeX Warning: Label `tab: ' multiply defined.
 
 
@@ -592,7 +595,7 @@ l.139
                                                   
 l.139 
        <./figures/thetimeswe.png> <./figures/dawnwe.png>]
-Overfull \hbox (33.1035pt too wide) in paragraph at lines 150--165
+Overfull \hbox (33.1035pt too wide) in paragraph at lines 155--170
  [][] 
  []
 
@@ -600,12 +603,12 @@ Overfull \hbox (33.1035pt too wide) in paragraph at lines 150--165
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.170 \newpage
+l.175 \newpage
                <./figures/sentimentfig.png>]
-<figures/leftwe.png, id=76, 1504.62125pt x 2759.30875pt>
+<figures/leftwe.png, id=78, 1504.62125pt x 2759.30875pt>
 File: figures/leftwe.png Graphic file (type png)
 <use figures/leftwe.png>
-Package pdftex.def Info: figures/leftwe.png  used on input line 180.
+Package pdftex.def Info: figures/leftwe.png  used on input line 185.
 (pdftex.def)             Requested size: 354.6651pt x 650.41653pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -621,12 +624,12 @@ Overfull \vbox (49.3874pt too high) has occurred while \output is active []
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.183 
+l.188 
        <./figures/leftwe.png>]
-<figures/centerwe.png, id=92, 1504.62125pt x 2759.30875pt>
+<figures/centerwe.png, id=94, 1504.62125pt x 2759.30875pt>
 File: figures/centerwe.png Graphic file (type png)
 <use figures/centerwe.png>
-Package pdftex.def Info: figures/centerwe.png  used on input line 187.
+Package pdftex.def Info: figures/centerwe.png  used on input line 192.
 (pdftex.def)             Requested size: 354.6651pt x 650.41653pt.
 
 Overfull \vbox (20.10146pt too high) has occurred while \output is active []
@@ -636,12 +639,12 @@ Overfull \vbox (20.10146pt too high) has occurred while \output is active []
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.190 
+l.195 
        <./figures/centerwe.png>]
-<figures/rightwe.png, id=99, 1504.62125pt x 2759.30875pt>
+<figures/rightwe.png, id=101, 1504.62125pt x 2759.30875pt>
 File: figures/rightwe.png Graphic file (type png)
 <use figures/rightwe.png>
-Package pdftex.def Info: figures/rightwe.png  used on input line 193.
+Package pdftex.def Info: figures/rightwe.png  used on input line 198.
 (pdftex.def)             Requested size: 354.6651pt x 650.41653pt.
 
 Overfull \vbox (20.10146pt too high) has occurred while \output is active []
@@ -651,7 +654,7 @@ Overfull \vbox (20.10146pt too high) has occurred while \output is active []
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.196 
+l.201 
        <./figures/rightwe.png>] [11] (Final_paper.aux)
 Package rerunfilecheck Info: File `Final_paper.out' has not changed.
 (rerunfilecheck)             Checksum: 28035083C91CA02D5A0F9D0B6DC19772;455.
@@ -661,9 +664,9 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9132 strings out of 480224
- 144661 string characters out of 2880103
- 485290 words of memory out of 3000000
+ 9133 strings out of 480224
+ 144673 string characters out of 2880103
+ 485291 words of memory out of 3000000
  25429 multiletter control sequences out of 15000+200000
  564494 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -675,12 +678,13 @@ pk><C:/Users/robal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 sfonts/cm/cmmi7.pfb><C:/Users/robal/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmr10.pfb><C:/Users/robal/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/robal/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/robal/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/robal/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Final_paper.pdf (11 pages, 3612419 bytes).
+TeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/robal/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/robal/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/robal/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Final_paper.pdf (11 pages, 3621583 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
+ 171 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
  19551 words of extra memory for PDF output out of 20736 (max. 10000000)
 
