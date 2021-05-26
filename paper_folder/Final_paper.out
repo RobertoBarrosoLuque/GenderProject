@@ -1,8 +1,11 @@
 \BOOKMARK [1][-]{section.1}{Introduction and Background}{}% 1
 \BOOKMARK [1][-]{section.2}{Methodology}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Web Scrapping}{section.2}% 3
-\BOOKMARK [1][-]{section.3}{Results}{}% 4
-\BOOKMARK [2][-]{subsection.3.1}{Word Embedings \(Word2Vec\)}{section.3}% 5
-\BOOKMARK [1][-]{section.4}{Conclusion, further research and limitations}{}% 6
-\BOOKMARK [1][-]{section.5}{Appendix}{}% 7
-\BOOKMARK [1][-]{section.6}{References}{}% 8
+\BOOKMARK [2][-]{subsection.2.2}{Word2Vec and Sentiment Analysis}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Results}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Semantic Meaning in Word Embedding Models}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Active Passive Voice}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{LSTM Binary Classifier}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Conclusion, further research and limitations}{}% 9
+\BOOKMARK [1][-]{section.5}{Appendix}{}% 10
+\BOOKMARK [1][-]{section.6}{References}{}% 11
