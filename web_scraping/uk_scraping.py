@@ -109,11 +109,15 @@ def get_guardian_articles_by_term(search_term: str):
     articles += res['response']['results']
 
     pages = res['response']['pages']
-    stopping = min(pages, 3)
+    stopping = min(pages, 6)
 
     for page in range(2, stopping+1):
         params['page'] = page
-        results = call_api_helper(params, url)['response']['results']
+        r = call_api_helper(params, url)
+        if 'results' in r['response']:
+            results = r['response']['results']
+        else:
+            results = []
         articles += results
     df = pd.DataFrame(articles)
     df['search_term'] = search_term
@@ -193,8 +197,9 @@ if __name__ == '__main__':
     data_dir = root/"data"
     data_dir.mkdir(exist_ok=True)
 
-    keywords = ["rape", "gang-rape", "gender-based violence", "honor killing", "women killed over honor", "child abuse", "forced marriage", 
-                "forced abortion", "sexual assault", "domestic violence", "sexual abuse", "woman+murder"]
+    keywords = ["rape", "gang-rape", '"gender-based violence"', '"child abuse"', '"forced marriage"', 
+                '"forced abortion"', '"sexual assault"', '"domestic violence"', '"sexual abuse"', '"woman murder"',
+                 '"honor killing"', '"woman killed over honor"']
 
     # get guardian articles
     mode, header = ('w', True)

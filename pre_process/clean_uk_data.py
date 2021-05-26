@@ -1,4 +1,5 @@
 import pandas as pd
+import re
 from pathlib import Path
 from typing import Dict, Optional, Sequence, Tuple
 
@@ -41,7 +42,7 @@ def clean_html_tags(df, col):
         col: string, column to have html tags stripped from
     returns; pandas DataFrame with no html tags in col
     '''
-    df[col].apply(lambda x: re.sub('<[^<]+?>', '', x))
+    df[col] = df[col].apply(lambda x: re.sub('<[^<]+?>', '', x))
     return df
 
 if __name__ == '__main__':
