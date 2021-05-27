@@ -4,33 +4,37 @@
 This document and project as a whole contain references to sexual abuse, harrassment and violence.
 
 ## Abstract:
-With increasing credence in the Distributional Hypothesis of language and the
+With increasing credence in the Distributional Hypothesis of Language and the
 development of neural network based methods to analyze textual data, there has
 been a growth in the computational linguistics field to study increasingly complex
 socio-cultural phenomena. Previous research has exploited the assumptions of
 the distributional hypothesis to create multidimensional vector representations of
 human language to investigate the presence of human bias in text. Furthermore,
-word embedding (WE) models have been used to understand the semantic meaning of class and gender through time. In this work, we seek to build upon this
-research by creating word embedding models of a compiled corpus, across the
-political spectrum, of three newspapers in Mexico, Pakistan and the United Kingdom. We created a WE model for each of the nine newspaper corpus generated
-to understand and compare how the online depiction of gender based violence
-(GBV) varies across political ideology and countries. Furthermore, we developed a
-methodology to identify the use of passive voice instances in text and quantified its
-use across newspapers to unearth subtle linguistic indicators often used to blame
-victims in sexual violence altercations. We find, by investigating the relationship between words in WE models, that there exists an increased association of
-blame/responsibility dimension attributed to men in lexical space as we move from
-right to left in the political spectrum. This finding is consistent in the data compiled
-for both the UK and Mexico, but not for Pakistan. Moreover, we wind that, on
-average, between 25% and 35% of content in online articles contain some form
-of passive instances, consistent with previous research in the field. Because of
-limitations in our data generating methodology, we identified non-GBV articles in
-our corpus. In order to limit noise in our dataset from these non-GBV articles, we
-built a recurrent neural network classifier based on the Long-Short Term Memory
-(LSTM) architecture for GBV article detection. Our work identifies important
-patterns in the language used in online depiction of GBV while seeking to create
-an accurate Neural Network based classifier for noise reduction. In future, we hope
-to use the developed classifier and the same methodologies to further understand
-newspaper reporting of GBV cases.
+word embedding (WE) models have been used to understand the semantic meaning
+of class and gender through time. In this work, we seek to build upon this research
+by creating word embedding models of a compiled corpus, across the political
+spectrum, of three newspapers in Mexico, Pakistan and the United Kingdom. We
+created a WE model for each of the nine newspaper corpus generated to understand
+and compare how the online depiction of gender based violence (GBV) varies
+across political ideology and country. Furthermore, we developed a methodology to
+identify the use of passive voice instances in text and quantified its use across newspapers
+to unearth subtle linguistic indicators often used to blame victims in sexual
+violence altercations. We find, by investigating the relationship between words in
+WE models, that there exists an increased association of a blame/responsibility
+dimension attributed to men in lexical space as we move from right to left in the
+political spectrum. This finding is consistent in the data compiled for both the UK
+and Mexico, but not for Pakistan. Moreover, we wind that, on average, between
+25% and 35% of content in online articles contain some form of passive instances,
+consistent with previous research in the field. Because of limitations in our data
+generating methodology, we identified non-GBV articles in our corpus. In order to
+limit noise in our dataset from these non-GBV articles, we built a recurrent neural
+network classifier based on the Long-Short Term Memory (LSTM) architecture for
+GBV article detection. Our work identifies important patterns in the language used
+in online depiction of GBV while seeking to create an accurate Neural Network
+based classifier for noise reduction. In future, we hope to use the developed classifier
+and the same methodologies to further understand newspaper reporting of
+GBV cases.
+
 
 ## Authors:
 - Caitlin Loftus
