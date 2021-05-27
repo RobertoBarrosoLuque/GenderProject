@@ -78,18 +78,15 @@ Public  interest  journalism has great potential to help in the fight against  g
 
 The media’s reporting can impact the public’s perception of GBV in a number of different ways. Firstly what is chosen to be reported on influences the types of violence the public are aware of and see as important issues. Secondly, the particular language choices made in the reporting—such as the words chosen to describe GBV, the structure of the writing, and particular linguistic devices—has a big impact on the public’s perception of GBV. For example, previous research has shown that the use of the passive voice in reporting of rape cases removes blame from the attacker (Bohner, 2001). Braber (2014) also demonstrated the use of the the passive voice in newspaper reporting about domestic violence cases, for example “an article in The Guardian describes the killing and the murder of a woman and her daughter, without mentioning the man who killed them.”
 
-Why is this important/interesting to study using NLP techniques?
-MISSING MISSING MISSING
+Natural language processing (NLP) techniques can be used to further understand the ways in which GBV is reported in the media. NLP techniques allow for easy detection of linguistic patterns over a large corpus, so can be used to test for for the presence of particular linguistic devices, or to detect new patterns. Our research aims to understand the words and language patterns used to describe instances of GBV in newspaper articles, with a focus on semantic meaning of words and on the use of the passive voice. 
 
+For the purpose of our research we look at newspaper articles from Mexico, the UK and Pakistan. In recent years there have been a number of important cases and movements surrounding gender-based violence in these three countries. We include Mexico to understand how GBV movements have been reported in the news and see how political ideologies may impact reporting methods. Instances of GBV are prevalent in the UK as well. Sarah Everard's death in early 2021 set off protests and movements against such instances. The case was reported on in various ways by different news outlets – some resorted to victim-blaming whereas some focused on more in-depth analysis. These patterns have been present in the past as well in terms of what kind of language is being used to depict instances of gender-based violence. Lastly, we take into account Pakistan where GBV is a widely underreported topic. Such instances are highly prevalent and a significant percentage of women experience domestic violence. Causes of underreporting include: A lack of belief in a legal system, lack of accountability in the (policing) authorities to actually report these issues, etc. Victim-blaming is unfortunately the norm in most instances and our goal is to analyze the sort of language news outlets use to describe such cases.
 
-The aim of our work
-MISSING MISSING MISSING
+\subsection{Related work}{
+The motivation behind looking at passive voice instances in newspaper articles related to GBV stems primarily from pre-existing literature. Research from Germany suggests how passive voice predominates in mass media reports describing male violence against women. Herd (2001) further suggest how content related to GBV tends to put the actor in the background and the acted-upon person in the focus of discourse. This study from Germany found how passive voice positively correlated positively with rape-myth acceptance and perceived responsibility of the victim (Herd 2001). This study was aimed at identifying subtle linguistic indicators of blaming victims of sexual violence, and at relating these to direct judgments of responsibility (Herd 2001). Although the experiment was conducted on non-professional writers, we aim to extend this to look at how relatively professional writers describe cases of gender-based violence. We aim to build on existing literature and delve more into the extent to which passive voice is used in such newspaper articles.
 
-For the purpose of our research, we look at Mexico, the UK and Pakistan. In recent years there have been a number of important cases and movements surrounding gender-based violence in these three countries. We include Mexico to understand how GBV movements have been reported in the news and see how political ideologies may impact reporting methods. Instances of GBV are prevalent in the UK as well. Sarah Everard's death in early 2021 set off protests and movements against such instances. The case was reported on in various ways by different news outlets – some resorted to victim-blaming whereas some focused on more in-depth analysis. These patterns have been present in the past as well in terms of what kind of language is being used to depict instances of gender-based violence. Lastly, we take into account Pakistan where GBV is a widely underreported topic. Such instances are highly prevalent and a significant percentage of women experience domestic violence. Causes of underreporting include: A lack of belief in a legal system, lack of accountability in the (policing) authorities to actually report these issues, etc. Victim-blaming is unfortunately the norm in most instances and our goal is to analyze the sort of language news outlets use to describe such cases.
-
-The motivation behind looking at passive voice instances in newspaper articles related to GBV stems primarily from pre-existing literature. It suggests how passive voice predominates in mass media reports describing male violence against women. This tends to put the actor in the background and the acted-upon person in the focus of discourse. An experiment from Germany found how passive voice positively correlated positively with rape-myth acceptance and perceived responsibility of the victim. This study was aimed at identifying subtle linguistic indicators of blaming victims of sexual violence, and at relating these to direct judgments of responsibility. Although the experiment was conducted on non-professional writers, we aim to extend this to look at how relatively professional writers describe cases of gender-based violence. We aim to build on existing literature and delve more into the extent to which passive voice is used in such newspaper articles.
-
-Motivation for this topic also stems from anecdotal evidence. We often see cases of GBV being reported in newspapers. The language used in such articles often places the blame on women. Or rather, the language used intentionally tries to take away from the GBV act. An example of this can be seen here from an article published in the Sun, a right-wing newspaper from the UK: 
+Motivation for this topic also stems from anecdotal evidence. We often see cases of GBV being reported in newspapers. The language used in such articles often places the blame on women. Or rather, the language used intentionally tries to take away from the GBV act. An example of this can be seen here from an
+\textcolor{blue}{\href{https://twitter.com/TheSun/status/755867885910851584}{\underline{article}}} published in the Sun, a right-wing newspaper from the UK
 The language used is passive and the words being used to describe the instance itself are vague. Attention is being given to what the victim was doing as opposed to focusing on what the perpetrator did. Existing literature combined with such evidence lay the foundation for what we try to explore. Our aim is to look at the extent to which passive voice occurs in GBV-related newspaper articles in Mexico, UK and Pakistan.
 
 First proposed by Harris, in the seminal work Distributional Structure  (1954)  and popularized by Firth (1957)  the Distributional Hypothesis of Language suggests that words that occur in similar contexts have similar meanings and that differences in linguistic form connote differences in meaning. This linguistic theory has given rise to a plethora of subsequent research by which Natural Language Processing methods have been used to understand the semantic meaning of words and concepts in different corpuses. Two recent studies are of particular relevance to our research.
@@ -99,14 +96,14 @@ Kozlowski et al. (2019) made use of the exciting method of word embeddings to an
 Caliskan et al. (2017) use Global Vector representations, or GloVe embeddings to understand historical biases in text across a multitude of dimensions including race and gender. This work finds that there exists a relationship between prejudicial human behavior and the division between ingroup-outgroups which can be understood through the semantic relationships between words in language.
 
 Taken together, these two papers exploit the assumptions of the Distribution Hypothesis of Language to gain insights into complex socio-cultural concepts by creating multidimensional vector representations of human language. We follow a similar methodology by using the Word2Vec algorithm and creating word embeddings of each of our compiled corpus, one language model for each newspaper. In doing so we seek to understand which terms are related to each other by comparing their cosine distance in multidimensional vector space.  This analysis allowed us to understand and compare multiple cultural and social concepts and their relationship to domestic violence in contemporary online media. 
-
+}
 
 }
 \newpage
 
 \section{Methodology}{
 	
-\subsection{Web Scrapping}{
+\subsection{Creating our corpus}{
 %Please add the following packages if necessary:
 %\usepackage{booktabs, multirow} % for borders and merged ranges
 %\usepackage{soul}% for underlines
@@ -114,6 +111,30 @@ Taken together, these two papers exploit the assumptions of the Distribution Hyp
 %\usepackage{changepage,threeparttable} % for wide tables
 %If the table is too wide, replace \begin{table}[!htp]...\end{table} with
 %\begin{adjustwidth}{-2.5 cm}{-2.5 cm}\centering\begin{threeparttable}[!htb]...\end{threeparttable}\end{adjustwidth}
+
+For our analysis we needed a corpus of newspaper articles related to GBV. No such corpus was already available, so we compiled our own using web scraping techniques. We identified a number of keyword search terms related to GBV which we used to scrape article data from newspaper websites. 
+
+\subsubsection{Selecting relevant keyword search terms}{
+To generate our list of keyword search terms, we initially based our list on some previous work done by Rukhshan, and then refined and added to the list based on our understanding from the literature. On coming up with the list of search terms we had two key things in mind: firstly GBV is quite broadly defined, so we wanted a list of search terms that reflected the range of different forms of gender based violence; secondly we identified search terms specific to GBV that we could be reasonably confident would return only relevant articles. 
+
+This process gave us a list of 10 relevant keywords in English, and Roberto then compiled a list of Spanish search terms that closely matched the English list. The search terms used are as follows:
+
+English: "rape", "gang-rape", "gender-based violence", "child+abuse", "forced+marriage", "forced+abortion", "sexual+assault", "domestic+violence", "sexual+abuse", "woman+murder", "honor+killing"
+
+Spanish: "violencia+genero", "asesinato+mujer", "matrimonio+forzado", "aborto+forzado", "agresion+sexual", "violencia+domtica", "abuso+sexual", "Feminicidio"
+                }
+\subsubsection{Selecting the newspapers}{ 
+In selecting the newspapers to scrape article data from, we wanted to get a roughly even number of articles from each of the three countries, and we also wanted to select newspapers from across the ideological spectrum in each country. We identified three popular newspapers from each of the countries to gather data on. The newspapers chosen, their political ideological tilt, and the number of articles scraped from them can be viewed in Table 1 below.
+
+For Pakistan we chose to only select articles that were written in English. This is because the highly cursive nature of Urdu would make it difficult to process in NLP models. The major news sources in Pakistan also primarily publish articles written in English, and the Urdu versions are often uploaded as images so it would require more complicated technologies to extract the information.
+
+Furthermore, our selection of Mexican newspapers is based on the work of Rodelo and Muniz (2016) in which they explore ideological and political tilt among the fifteen most read newspapers in Mexico. We selected El Heraldo, El Universal and La Jornada as paragon examples of conservative, moderate and left ideologies in mexican journalism.}
+
+\subsubsection{Web scraping}{
+To gather the data we primarily used Selenium and Beautiful Soup in Python to scrape the article data for each keyword for each identified newspaper. One of the news sources we had chosen (the Guardian from the UK) has their own api, which we used to collect that data. To scrape the data we passed each of our search terms into the search functionalities on the newspaper websites, and scraped the article data for the returned search results. 
+
+We scraped articles that were published from the beginning of 2020 until the present day. This was because we were interested in recent events in each country. Our article collection gave us a corpus of around 17,700 articles on topics related to GBV. You can see the breakdown of the number of articles by newspaper in Table 1.}
+
 \begin{table}[!htp]\centering
 	\caption{Article and Newspaper Counts}\label{tab: }
 	\scriptsize
@@ -136,8 +157,94 @@ Taken together, these two papers exploit the assumptions of the Distribution Hyp
 	\end{tabular}
 \end{table}
 
+\subsubsection{Data cleaning}{
+After compiling our copus, the data needed cleaning and normalising before we could use it for our analyses. We removed any duplicate articles, and then pre-processed the data using methods such as stop-word removal, tokenizing and normalising.}
+
 }
 
+\subsection{GBV NN Classification}{
+On beginning our analyses we noticed there appeared to be some noise in our data, as some article headlines did seem to be related to GBV. To investigate this we first took a random sample of 100 headlines each from four of our newspaper datasets and manually labelled the headlines as related to GBV, not related to GBV, or unclear. You can see the breakdown of this initial labelling in Table 2.
+
+\begin{table}[!htp]\centering
+	\caption{Noise in newspaper headlines initial counts (out of 100)}\label{tab: }
+	\scriptsize
+	\begin{tabular}{lrrrr}\toprule
+		&Yes &No &Unsure \\\midrule
+		Pakistan combined &58 &28 &14 \\
+		UK - the Sun &64 &27 &9 \\
+		UK - the Times &50 &40 &10 \\
+		UK - the Guardian &30 &58 &12 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The noise in our data is a result of methods we used to collect our data. By scraping data using a keyword search we are reliant on each website’s search functionality. This can cause noise in the data for two different reasons. Firstly each website has their own way they prioritise results from search requests. This means that if we have a composite search term such as “domestic+violence”, some websites will prioritise articles with the full search term in the results, whereas others also return results where the individual words (“domestic” and “violence”) are present separately. Secondly, a keyword search returns articles where that keyword term is present anywhere in the article, even if it is not the main focus of the article. This means that when looking at the headline of an article it may not appear to be about GBV even though a GBV keyword term is present somewhere in the article. 
+
+From the results of the initial headline labelling it was clear that noise in our data was a concern, so we decided to build a binary classification model to attempt to filter out the noise from the corpus. To do this we created a labelled dataset of a random subset of the data and built a recurrent neural network model in PyTorch
+
+\subsubsection{Labelling the data}{
+We chose to take a random sample of 300 articles from each of our newspaper datasets to label and use to train our classification model. This gave us around 900 articles from each country to be split into train, test and validation sets. This number was chosen so as to be manageable to label as we were manually labelling the data while giving us enough data to meaningfully train our model. 
+
+We labelled the data based mainly on the article headline, and on the article text if the context was not clear from the headline. We used binary labels, where an article was labeled with a 1 we determined it was about GBV, and 0 otherwise. You can view the breakdown of the percentage of articles labelled as 1 (about GBV) by newspaper in Table 3 below.
+
+\begin{table}[!htp]\centering
+	\caption{Percentage of GBV articles in corpus by newspaper (out of 300 articles for each newspaper)}\label{tab: }
+	\scriptsize
+	\begin{tabular}{lrrr}\toprule
+		&\textbf{Newspaper} &\textbf{GBV articles (\%)} \\\midrule
+		\multirow{3}{*}{Mexico} &El Heraldo &70 \\
+		&El Universal &77 \\
+		&La Jornada &69 \\
+		& & & \\
+		\multirow{3}{*}{Pakistan} &Nation &63 \\
+		&Dawn &77 \\
+		&The News &74 \\
+		& & & \\
+		\multirow{3}{*}{UK} &The Times &48 \\
+		&The Sun &65 \\
+		&The Guardian &37 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+}
+
+\subsubsection{Binary classification model}{
+
+For our classification model we chose to create a Long-Short Term Memory (LSTM) model (Hochreiter and Schmidhuber, 1997). An LSTM model is a recurrent neural network with a gating mechanism. This means that unlike feedforward neural networks an LSTM model has backwards connections, which allows the model to learn the whole context of a sentence, and how the words relate to each other. The gating mechanism allows for some information held in memory in the model to be forgotten, so only the relevant information is retained. 
+
+We created the LSTM binary classification model in PyTorch, using the article headlines as the text input, and the binary labels we had assigned as the target output. We normalized the headline text and tokenized it using the SpaCy tokenizer. An example of the data after tokenizing is as follows, with ‘text’ containing the tokenized headline, and the label being the label we had assigned:
+
+\begin{verbatim}
+{'text': ['sarah', 'everard', 'met', 'officer', 'appears', 'in', 'court',
+'charged', 'with', 'kidnap', 'and', 'murder'], 'label': 1}    
+\end{verbatim}
+
+We created a separate model for each country. For Mexico this makes sense as the articles are in Spanish whereas the UK and Pakistan articles are in English. While building the models we also discovered that article headlines are written quite differently in newspapers from Pakistan as compared to those from the UK and the models learnt better when we created separate models for articles from Pakistan and from the UK.  
+
+The LSTM model was defined with the following parameters:
+\begin{itemize}
+  \item Embedding layer: length of the input vocab x the embedding dim, with a padding index of 1
+  \item LSTM layer: embedding dim x hidden dim, with a dropout rate of 0.2
+  \item Linear layer 1: 2x hidden dim x hidden dim
+  \item Linear layer 2: hidden dim x 1, with a dropout rate of 0.2 
+\end{itemize}
+
+For example, for the Pakistan model the parameters were as follows:
+\begin{verbatim}
+LSTM_net(
+  (embedding): Embedding(1371, 200, padding_idx=1)
+  (lstm): LSTM(200, 256, num_layers=2, batch_first=True, dropout=0.2,
+               bidirectional=True)
+  (fc1): Linear(in_features=512, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+)\end{verbatim}
+
+For the two English language models (Pakistan and the UK), we trained two models: one where we initialised the embedding layer with GloVe embeddings, and another where we initialised the embedding layer randomly. For the Mexico model we were not able to find appropriate pre-trained embeddings, so only one model was trained on the Mexican articles. 
+}
+
+}
 
 \subsection{Word2Vec and Sentiment Analysis}{
 
@@ -155,9 +262,54 @@ Finally, semantic algebra using the vector representation of specific words was 
 \end{equation}
 
 }
-	
+
+
+\subsection{Passive Voice}{
+Before delving into how we go about identifying passive voice patterns in our corpus, we define what passive voice and, for comparison, active voice are.
+
+\begin{itemize}
+    \item \textbf{Passive Voice}: In this case, the subject is a recipient of a verb’s action (target + verb + actor) Examples of passive voice would be:
+    \begin{itemize}
+        \item Spanish: El libro fue escrito por Emilio.
+        \item English: The book was written by Emilio
+    \end{itemize}
+
+    \item \textbf{Active Voice}: Case where sentence has a subject that acts upon its verb (actor + verb + target) Examples of active voice would be:
+    \begin{itemize}
+        \item Spanish: Emilio escribe un libro.
+        \item English: Emilio is writing a book.
+    \end{itemize}
+\end{itemize}
+
+In the aforementioned examples, we observe how active sentences are easier to read and understand. Passive sentences have an associated ambiguity associated with them and are structured in a complex manner. Thus, in order to identify a sentence with passive voice, we would need to analyze the grammatical structure of a sentence based on the dependencies between the words. This is possible through dependency trees that allow us to recognize a sentence and then assign a syntactic structure to it.
+
+In order to understand dependencies, we look at an example sentence:
+
+\begin{center}\emph{“Dependencies for Bills on ports and immigration were submitted by Senator Brownback, Republican of Kansas”}
+\end{center}
+
+Firstly, we observe that this sentence is in the passive voice. It follows 
+has a fairly complex structure. The dependency tree for this sentence is given in the following image:
+
+
+\begin{figure}[H]
+	\center{\includegraphics[width=\textwidth]
+		{figures/deptree.png}}
+	\caption{\label{fig:my-label1} Dependency tree for an example sentence. Source(Stanza Documentation)}
+\end{figure}
+
+The labels next to the arrows in the tree are the dependencies. We observe multiple in this sentence however our focus is on the dependencies in green boxes: \emph{nsubjpass} (passive nominal subject) is a noun phrase which is the syntactic subject of a passive clause. \emph{auxpass} (auxiliary passive clause) is  non-main verb of the clause which contains the passive information
+
+Moving forward with these definitions in mind, we observe how the word submitted, in this context, occurs as an \emph{nsubjpass} whereas the word were occurs as an \emph{auxpass}. The occurrence of these two together is what we define as a passive instance.
+
+To solidify how we define a passive instance, we took a list of passive sentences in Spanish and English and created dependency trees using Stanza – which contains pre-trained neural network models supporting both languages. We used these trees to perform a manual check of patterns that only appeared in passive sentences (in both Spanish and English). Using this method, we arrived at the following patterns for Spanish: ['det', 'nsubj', 'aux', 'root'], ['det', 'nsubj', 'advmod', 'aux', 'aux', 'root'], ['det', 'nsubj', 'amod', 'aux', 'root'], ['det', 'nsubj', 'aux', 'root', 'case', 'det'], 'explpass'. For English, we arrive at the following pattern: [nsubjpass, auxpass].
+
+Having identified these patterns, we created pipelines in Stanza for Spanish, combined the article headline and text and looked for the number of times these patterns occur in our data. For the purpose of this analysis, we kept 300 articles from each newspaper. Once we arrived at the count of passive instances, we divided these up by the number of sentences in that article – this allowed us to have a normalized estimate that we could easily interpret.
+
+One limitation to our approach is that passive voice in a sentence may exhibit patterns that we have not accounted for. Furthermore, to make our methodology more rigorous, an LSTM could be implemented. However, for this purpose, a larger pre-labelled dataset with passive sentences (related to gender-based violence newspaper articles) would be required. These were not available online and these would thus need to be manually labelled. Although these limitations are necessary for us to consider, our goal is to lay the foundation for future research in passive voice depiction in GBV-related newspaper articles. Results are discussed in the next section.
+
 }
-\newpage
+}
 
 
 \section{Results}{	
@@ -169,7 +321,7 @@ As described in our methodology section, we visualized the relationship between 
 	w \in \sqsubset  {man, woman, abuse, place, victim, blame, responsibility} \sqsupset
 \end{equation}
 
-Figure 1 and figure 2 show examples of PCA, TSNE and scree plots for a word embedding models fit to The Guardian (UK) and The Sun (UK) newspapers. We find that the relative distance between specific keywords such as woman, abuse and man in The Guardian WE model (Figure 1) when compared to the relative distance to the same three words in The Sun WE model (Figure 2) and The Times WE model (Supplementary Figure 5) show differential semantic use of these three words by each newspaper. The Guardian, which is left of center in the political spectrum, associates the word man as a middle word between abuse and woman as seen in the central position found in its WE model. In contrast, The Sun, the most conservative  UK newspaper in our dataset, creates a much closer association between woman and abuse, placing man farther away as seen in the PCA plot for this newspaper. The Times, a moderate UK newspaper, follows a similar pattern to the Guardian. The finding in the UK using relative position of man, abuse and woman is not replicated neither in Pakistan nor in Mexico’s WE models. The appendix shows supplementary figures 4, 5 and 6 with 2-dimensional visualizations for all newspapers grouped by political tilt for all three countries. For both Pakistani and Mexican newspapers it is difficult to draw conclusions from the PCA and TSNE plots of their respective embeddings. Yet by using sentiment analysis and semantic algebra interesting patterns start to arise. 
+Figure 1 and Figure 2 show examples of PCA, TSNE and scree plots for a word embedding models fit to The Guardian (UK) and The Sun (UK) newspapers. We find that the relative distance between specific keywords such as woman, abuse and man in The Guardian WE model (Figure 1) when compared to the relative distance to the same three words in The Sun WE model (Figure 2) and The Times WE model (Supplementary Figure 5) show differential semantic use of these three words by each newspaper. The Guardian, which is left of center in the political spectrum, associates the word man as a middle word between abuse and woman as seen in the central position found in its WE model. In contrast, The Sun, the most conservative  UK newspaper in our dataset, creates a much closer association between woman and abuse, placing man farther away as seen in the PCA plot for this newspaper. The Times, a moderate UK newspaper, follows a similar pattern to the Guardian. The finding in the UK using relative position of man, abuse and woman is not replicated neither in Pakistan nor in Mexico’s WE models. The appendix shows supplementary figures 4, 5 and 6 with 2-dimensional visualizations for all newspapers grouped by political tilt for all three countries. For both Pakistani and Mexican newspapers it is difficult to draw conclusions from the PCA and TSNE plots of their respective embeddings. Yet by using sentiment analysis and semantic algebra interesting patterns start to arise. 
 
 \begin{figure}[H]
 	\center{\includegraphics[width=\textwidth]
@@ -184,7 +336,7 @@ Figure 1 and figure 2 show examples of PCA, TSNE and scree plots for a word embe
 \end{figure}
 
 
-When using semantic algebra to create a word analogy solver (equation 1) we find a clear relationship between ideological tilt and semantic meaning for man and woman in media depictions of GBV. In table 2 we see the results of the analogy operation for the vector representations of woman, victim and man as described in (equation 3).
+When using semantic algebra to create a word analogy solver (equation 1) we find a clear relationship between ideological tilt and semantic meaning for man and woman in media depictions of GBV. In Table 4 we see the results of the analogy operation for the vector representations of woman, victim and man as described in (equation 3).
 
 \begin{equation} \label{eu_eqn}
 	w_{woman} + w_{victim} - w_{man} = ??
@@ -229,18 +381,52 @@ Finally, we go on to use pre-trained sentiment scoring models to find the averag
 \subsection{Active Passive Voice}{
 
 
-MISSING MISSING MISSING
+Using a normalized estimate, we find that approximately 25\% of the content in one article contains some form of passive instance associated with it in Mexican newspapers. In the case of the UK, we find that approximately 31\% of the content in one article contains passive instances. The number for Pakistan is also ~31\%. This is in line with what pre-existing literature suggests. Gerd Bohner in his research based in Germany suggests that passive voice forms about 15\% of the content in an article compared to active voice. We do see that in our case, the estimates are higher. This could primarily be due to the nature of our data collection and our focus on Mexico, UK and Pakistan.
 
+The breakdown by newspaper and political ideology is as follows:
 
+\begin{table}[!htp]\centering
+	\caption{Percentage by Newspaper and Political Ideology}\label{tab: }
+	\scriptsize
+	\begin{tabular}{lrrrr}\toprule
+		&\textbf{Newspaper} &\textbf{Political ideology} &\textbf{Result} \\\midrule
+		\multirow{3}{*}{Mexico} &El Heraldo &Right &25.7\% \\
+		&El Universal &Centre &20.5\% \\
+		&La Jornada &Left &25.6\%\\
+		& & &\textbf{} \\
+		\multirow{3}{*}{Pakistan} &Nation &Centre-Right &29.3\% \\
+		&Dawn &Centre-Left &31.5\% \\
+		&The News &Centre-Left &32.5\% \\
+		&\textbf{} &\textbf{} &\textbf{} \\
+		\multirow{3}{*}{UK} &The Sun &Right &25.8\% \\
+		&The Times &Centre-right &31.3\%\\
+		&The Guardian &Left &35.7\%\\
+		\bottomrule
+	\end{tabular}
+\end{table}
 
-
+ 
+ We do not observe any trends in terms of political affiliation and usage of passive voice. Overall, we observe that content from Mexico related to GBV uses less passive voice. This could potentially be as a result of the patterns we use when looking for passive voice.
 
 }
 
 
 \subsection{LSTM Binary Classifier}{
 
+For the Pakistan and UK models we found they learnt much faster when the embedding layer was initialised with GloVe embeddings, so we chose to use the GloVe embeddings in our final models. You can see the validation accuracy across EPOCH for the two Pakistan models in Figure 5 below. 
 
+The learning rate was similar for the UK, but slightly worse than for Pakistan. The validation accuracy plots for the UK models can be viewed in the Appendix in Figure 9, and the validation accuracy plot for the Mexico model can be viewed in Figure 10 also in the Appendix. 
+
+Our models were learnt to classify article headlines as related to GBV or not with a reasonably high degree of accuracy. Table 6 shows the test set accuracy and F1 scores for the best model for each country. The Mexico model did not learn to classify the headlines as well as the models for the other two countries. This is likely in part due to not initialising the embedding layer with pre-trained embeddings. There may also be other aspects of the model that do not work as well with the Spanish language.
+
+
+\begin{figure}[H]
+	\center{\includegraphics[width=\textwidth]
+		{figures/pakistan_validation_accuracies.png}}
+	\caption{\label{fig:my-label1} Pakistan LSTM models validation accuracy by EPOCH}
+\end{figure}
+
+}
 \begin{table}[!htp]\centering
 	\caption{Evaluation Metrics LSTM GBV Classifier}\label{tab: }
 	\scriptsize
@@ -252,8 +438,6 @@ MISSING MISSING MISSING
 		\bottomrule
 	\end{tabular}
 \end{table}
-}
-
 	
 }
 \newpage
@@ -261,7 +445,29 @@ MISSING MISSING MISSING
 BLABLABLA
 }
 
+\newpage
+\raggedbottom
+\section{Description of effort}{
 
+NEED TO WRITE THIS SECTION!!
+
+Description of your effort, including the relative effort on different activities. 
+What did you have to learn for the project? 
+What skills did you already possess? E.g., did you need to learn how to use particular libraries? Did you spend more time reading research papers, or fine tuning your parameters? 
+
+\paragraph{What part of the work was done by which team member?}{
+\begin{itemize}
+  \item Web-scraping and gathering data – Everyone
+  \item Word2Vec/Embeddings – Roberto
+  \item Classification – Caitlin
+  \item Passive Voice – Rukhshan
+  \item Presentation + Report – Collectively
+\end{itemize}
+
+}
+}
+
+\newpage
 \section{Appendix}{
 
 \begin{figure}[H]
@@ -285,6 +491,17 @@ BLABLABLA
 
 }
 
+\begin{figure}[H]
+	\center{\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]
+		{figures/uk_validation_accuracies.png}}
+	\caption{\label{fig:my-label1} UK LSTM models validation accuracy by EPOCH}
+\end{figure}
+
+\begin{figure}[H]
+	\center{\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]
+		{figures/mexico_validation_accuracies.png}}
+	\caption{\label{fig:my-label1} Mexico LSTM model validation accuracy by EPOCH}
+\end{figure}
 
 
 
@@ -313,6 +530,7 @@ BLABLABLA
 
 [11] Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013. Distributed representations of words and phrases and their compositionality. In Proceedings of the 26th International Conference on Neural Information Processing Systems - Volume 2 (NIPS'13). Curran Associates Inc., Red Hook, NY, USA, 3111–3119.
 
+[12] Gerd Bohner. 2001. Writing about rape: Use of the passive voice and other distancing text features as an expression of perceived responsibility of the victim. British Journal of Social Psychology. pp. 515–529 
 \newpage
 \pagebreak
 
