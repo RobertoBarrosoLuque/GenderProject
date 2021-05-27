@@ -9,11 +9,11 @@
 The folder structure is as follows:
 
 - [data](data):
-    - [data/Mexico](Mexico)
-    - [data/UK](UK)
-    - [data/Pakistan](Pakistan)
-    - [data/analysis_results](Analysis)
-    - [data/data_labelling](Labelling)
+    - [Mexico](data/Mexico)
+    - [UK](data/UK)
+    - [Pakistan](data/Pakistan)
+    - [Analysis](data/analysis_results)
+    - [Data Labelling](data/data_labelling)
 - [notebook_experiments](notebook_experiments):
 - [paper_folder](paper_folder):
 - [web_sraping](web_scraping):
