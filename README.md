@@ -1,10 +1,20 @@
 # Understanding depiction of Gender-based violence in newspaper articles
 
 ##  Trigger Warning:
+This document and project as a whole contain references to sexual abuse, harrassment and violence.
 
 ## Abstract:
 
 ## Authors:
+- Caitlin Loftus
+- Roberto Barroso Luque
+- Rukhshan Arif Mian
+
+## Acknowledgements:
+We would like to thank the following people for their support throughout this project:
+1. Professor Amitabh Chaudhary (University of Chicago)
+2. Jenny Long (University of Chicago)
+3. Rosa Zhou (University of Chicago)
 
 ## Folder Structure:
 
@@ -28,4 +38,4 @@ The folder structure is as follows:
 6. [requirements.txt](requirements.text): Requirements file for this project
 
 
-## Collaborators:
+
