@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.11.1)  27 MAY 2021 10:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.11.1)  27 MAY 2021 14:12
 entering extended mode
 **./Final_paper.tex
 (Final_paper.tex
@@ -419,22 +419,22 @@ LaTeX Warning: Label `fig:my-label1' multiply defined.
 )
 \openout1 = `Final_paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -502,7 +502,7 @@ LaTeX Font Info:    ... okay on input line 62.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 62.
+Package hyperref Info: Link coloring OFF on input line 63.
 (C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -515,21 +515,21 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count275
 )
-LaTeX Info: Redefining \ref on input line 62.
-LaTeX Info: Redefining \pageref on input line 62.
-LaTeX Info: Redefining \nameref on input line 62.
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
+LaTeX Info: Redefining \nameref on input line 63.
  (Final_paper.out) (Final_paper.out)
 \@outlinefile=\write3
 \openout3 = `Final_paper.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 62.
+LaTeX Info: Redefining \microtypecontext on input line 63.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 62.
+LaTeX Info: Redefining \showhyphens on input line 63.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -562,7 +562,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
 
 
 (C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -571,7 +571,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 65.
 
 
 (C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -581,7 +581,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
-4.
+5.
 
 (C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -595,14 +595,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 {C:/Users/robal/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3]
-Underfull \hbox (badness 1642) in paragraph at lines 122--123
+Underfull \hbox (badness 1642) in paragraph at lines 128--129
 []\T1/ptm/m/n/10 (+20) English: "rape", "gang-rape", "gender-based vi-o-lence",
  "child+abuse", "forced+marriage",
  []
 
 [4] [5]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-27.
+33.
 
 (C:\Users\robal\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -611,7 +611,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 <figures/deptree.png, id=119, 484.81125pt x 322.20375pt>
 File: figures/deptree.png Graphic file (type png)
 <use figures/deptree.png>
-Package pdftex.def Info: figures/deptree.png  used on input line 297.
+Package pdftex.def Info: figures/deptree.png  used on input line 303.
 (pdftex.def)             Requested size: 397.48499pt x 264.17928pt.
  [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -620,17 +620,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.320 \begin{equation}
+l.326 \begin{equation}
                        \label{eu_eqn} <./figures/deptree.png>]
 <figures/theguardian.png, id=138, 1531.7225pt x 951.555pt>
 File: figures/theguardian.png Graphic file (type png)
 <use figures/theguardian.png>
-Package pdftex.def Info: figures/theguardian.png  used on input line 328.
+Package pdftex.def Info: figures/theguardian.png  used on input line 334.
 (pdftex.def)             Requested size: 397.48499pt x 246.91931pt.
 <figures/thesun.png, id=139, 1522.68875pt x 951.555pt>
 File: figures/thesun.png Graphic file (type png)
 <use figures/thesun.png>
-Package pdftex.def Info: figures/thesun.png  used on input line 334.
+Package pdftex.def Info: figures/thesun.png  used on input line 340.
 (pdftex.def)             Requested size: 397.48499pt x 248.38579pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -639,9 +639,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.337 
+l.343 
        <./figures/theguardian.png>]
-Overfull \hbox (33.1035pt too wide) in paragraph at lines 353--368
+Overfull \hbox (33.1035pt too wide) in paragraph at lines 359--374
  [][] 
  []
 
@@ -649,18 +649,18 @@ Overfull \hbox (33.1035pt too wide) in paragraph at lines 353--368
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.371 
+l.377 
        <./figures/thesun.png>]
 <figures/sentimentfig.png, id=156, 1352.05125pt x 528.97626pt>
 File: figures/sentimentfig.png Graphic file (type png)
 <use figures/sentimentfig.png>
-Package pdftex.def Info: figures/sentimentfig.png  used on input line 374.
+Package pdftex.def Info: figures/sentimentfig.png  used on input line 380.
 (pdftex.def)             Requested size: 397.48499pt x 155.50584pt.
  [11pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.418 T
+l.424 T
        he learning rate was similar for the UK, but slightly worse than for ...
  <./figures/sentimentfig.png>]
 <figures/pakistan_validation_accuracies.png, id=164, 820.06375pt x 412.54124pt>
@@ -668,18 +668,18 @@ l.418 T
 File: figures/pakistan_validation_accuracies.png Graphic file (type png)
 <use figures/pakistan_validation_accuracies.png>
 Package pdftex.def Info: figures/pakistan_validation_accuracies.png  used on in
-put line 425.
+put line 431.
 (pdftex.def)             Requested size: 397.48499pt x 199.96266pt.
  [12pdfTeX warning (ext4): destination with the same identifier (name{figure.5}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.443 \newpage
+l.449 \newpage
                <./figures/pakistan_validation_accuracies.png>] [13] [14]
-<figures/leftwe.png, id=182, 1504.62125pt x 2759.30875pt>
+<figures/leftwe.png, id=181, 1504.62125pt x 2759.30875pt>
 File: figures/leftwe.png Graphic file (type png)
 <use figures/leftwe.png>
-Package pdftex.def Info: figures/leftwe.png  used on input line 475.
+Package pdftex.def Info: figures/leftwe.png  used on input line 481.
 (pdftex.def)             Requested size: 354.6651pt x 650.41653pt.
 
 [15]
@@ -690,12 +690,12 @@ Overfull \vbox (49.3874pt too high) has occurred while \output is active []
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.478 
+l.484 
        <./figures/leftwe.png>]
-<figures/centerwe.png, id=193, 1504.62125pt x 2759.30875pt>
+<figures/centerwe.png, id=192, 1504.62125pt x 2759.30875pt>
 File: figures/centerwe.png Graphic file (type png)
 <use figures/centerwe.png>
-Package pdftex.def Info: figures/centerwe.png  used on input line 482.
+Package pdftex.def Info: figures/centerwe.png  used on input line 488.
 (pdftex.def)             Requested size: 354.6651pt x 650.41653pt.
 
 Overfull \vbox (20.10146pt too high) has occurred while \output is active []
@@ -705,12 +705,12 @@ Overfull \vbox (20.10146pt too high) has occurred while \output is active []
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.485 
+l.491 
        <./figures/centerwe.png>]
-<figures/rightwe.png, id=200, 1504.62125pt x 2759.30875pt>
+<figures/rightwe.png, id=199, 1504.62125pt x 2759.30875pt>
 File: figures/rightwe.png Graphic file (type png)
 <use figures/rightwe.png>
-Package pdftex.def Info: figures/rightwe.png  used on input line 488.
+Package pdftex.def Info: figures/rightwe.png  used on input line 494.
 (pdftex.def)             Requested size: 354.6651pt x 650.41653pt.
 
 Overfull \vbox (20.10146pt too high) has occurred while \output is active []
@@ -720,34 +720,32 @@ Overfull \vbox (20.10146pt too high) has occurred while \output is active []
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.491 
+l.497 
        <./figures/rightwe.png>]
-<figures/uk_validation_accuracies.png, id=207, 847.165pt x 391.4625pt>
+<figures/uk_validation_accuracies.png, id=206, 847.165pt x 391.4625pt>
 File: figures/uk_validation_accuracies.png Graphic file (type png)
 <use figures/uk_validation_accuracies.png>
 Package pdftex.def Info: figures/uk_validation_accuracies.png  used on input li
-ne 496.
+ne 502.
 (pdftex.def)             Requested size: 397.48248pt x 183.6708pt.
-<figures/mexico_validation_accuracies.png, id=208, 791.95876pt x 413.545pt>
+<figures/mexico_validation_accuracies.png, id=207, 791.95876pt x 413.545pt>
 File: figures/mexico_validation_accuracies.png Graphic file (type png)
 <use figures/mexico_validation_accuracies.png>
 Package pdftex.def Info: figures/mexico_validation_accuracies.png  used on inpu
-t line 502.
+t line 508.
 (pdftex.def)             Requested size: 397.48895pt x 207.56075pt.
  [19pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.518 [
-       5]Kozlowski, A. C., Taddy, M., and Evans, J. A. (2019). The geometry ...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
-as been already used, duplicate ignored
+l.513 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.518 [
-       5]Kozlowski, A. C., Taddy, M., and Evans, J. A. (2019). The geometry ...
- <./figures/uk_validation_accuracies.png> <./figures/mexico_validation_accuraci
-es.png>] [20] (Final_paper.aux)
+l.513 \newpage
+               <./figures/uk_validation_accuracies.png> <./figures/mexico_valid
+ation_accuracies.png>] [20] (Final_paper.aux)
 Package rerunfilecheck Info: File `Final_paper.out' has not changed.
 (rerunfilecheck)             Checksum: 1375DE45A5BED91B64D057FD1C7D1BF1;1443.
 
@@ -756,13 +754,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9331 strings out of 480224
- 147441 string characters out of 2880103
- 500741 words of memory out of 3000000
+ 9330 strings out of 480224
+ 147431 string characters out of 2880103
+ 500354 words of memory out of 3000000
  25484 multiletter control sequences out of 15000+200000
  569534 words of font info for 152 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,11n,77p,1496b,412s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,11n,77p,1869b,412s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/robal/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C
 :\Users\robal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.
 pk><C:/Users/robal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
@@ -774,9 +772,9 @@ TeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/robal/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/robal/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/robal/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Final_paper.pdf (20 pages, 4352140 bytes).
+Output written on Final_paper.pdf (20 pages, 4355857 bytes).
 PDF statistics:
- 319 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
+ 318 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
  20187 words of extra memory for PDF output out of 20736 (max. 10000000)
 
