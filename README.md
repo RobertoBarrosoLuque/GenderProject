@@ -1,10 +1,12 @@
 # Understanding depiction of Gender-based violence in newspaper articles
 
+##  Trigger Warning:
 
-## Abstract
+## Abstract:
 
+## Authors:
 
-## Folder Structure
+## Folder Structure:
 
 The folder structure is as follows:
 
@@ -24,3 +26,5 @@ The folder structure is as follows:
 - [word_embedding](word_embedding):
 - [requirements.txt](requirements.text):
 
+
+## Collaborators:
