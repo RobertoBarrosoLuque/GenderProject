@@ -45,7 +45,7 @@
 % authors names on the first line, and the last on the second line, try using
 % \AND instead of \And before the third author name.
 
-\title{Understanding gender violence depiction in online news media}
+\title{Analyzing Gender Violence Depiction in Online News Media through Word Embeddings}
 
 \author{Caitlin Loftus \\
 	\texttt{cloftus@uchicago.edu}  \\
@@ -119,9 +119,9 @@ To generate our list of keyword search terms, we initially based our list on som
 
 This process gave us a list of 10 relevant keywords in English, and Roberto then compiled a list of Spanish search terms that closely matched the English list. The search terms used are as follows:
 
-English: "rape", "gang-rape", "gender-based violence", "child+abuse", "forced+marriage", "forced+abortion", "sexual+assault", "domestic+violence", "sexual+abuse", "woman+murder", "honor+killing"
+English: {"rape", "gang-rape", "gender-based violence", "child+abuse", "forced+marriage", "forced+abortion", "sexual+assault", "domestic+violence", "sexual+abuse", "woman+murder", "honor+killing"}
 
-Spanish: "violencia+genero", "asesinato+mujer", "matrimonio+forzado", "aborto+forzado", "agresion+sexual", "violencia+domtica", "abuso+sexual", "Feminicidio"
+Spanish: {"violencia+genero", "asesinato+mujer", "matrimonio+forzado", "aborto+forzado", "agresion+sexual", "violencia+domtica", "abuso+sexual", "feminicidio"}
                 }
 \subsubsection{Selecting the newspapers}{ 
 In selecting the newspapers to scrape article data from, we wanted to get a roughly even number of articles from each of the three countries, and we also wanted to select newspapers from across the ideological spectrum in each country. We identified three popular newspapers from each of the countries to gather data on. The newspapers chosen, their political ideological tilt, and the number of articles scraped from them can be viewed in Table 1 below.
@@ -321,7 +321,7 @@ As described in our methodology section, we visualized the relationship between 
 	w \in \sqsubset  {man, woman, abuse, place, victim, blame, responsibility} \sqsupset
 \end{equation}
 
-Figure 1 and Figure 2 show examples of PCA, TSNE and scree plots for a word embedding models fit to The Guardian (UK) and The Sun (UK) newspapers. We find that the relative distance between specific keywords such as woman, abuse and man in The Guardian WE model (Figure 1) when compared to the relative distance to the same three words in The Sun WE model (Figure 2) and The Times WE model (Supplementary Figure 5) show differential semantic use of these three words by each newspaper. The Guardian, which is left of center in the political spectrum, associates the word man as a middle word between abuse and woman as seen in the central position found in its WE model. In contrast, The Sun, the most conservative  UK newspaper in our dataset, creates a much closer association between woman and abuse, placing man farther away as seen in the PCA plot for this newspaper. The Times, a moderate UK newspaper, follows a similar pattern to the Guardian. The finding in the UK using relative position of man, abuse and woman is not replicated neither in Pakistan nor in Mexico’s WE models. The appendix shows supplementary figures 4, 5 and 6 with 2-dimensional visualizations for all newspapers grouped by political tilt for all three countries. For both Pakistani and Mexican newspapers it is difficult to draw conclusions from the PCA and TSNE plots of their respective embeddings. Yet by using sentiment analysis and semantic algebra interesting patterns start to arise. 
+Figure 2 and Figure 3 show examples of PCA, TSNE and scree plots for a word embedding models fit to The Guardian (UK) and The Sun (UK) newspapers. We find that the relative distance between specific keywords such as woman, abuse and man in The Guardian WE model (Figure 2) when compared to the relative distance to the same three words in The Sun WE model (Figure 3) and The Times WE model (Supplementary Figure 6) show differential semantic use of these three words by each newspaper. The Guardian, which is left of center in the political spectrum, associates the word man as a middle word between abuse and woman as seen in the central position found in its WE model. In contrast, The Sun, the most conservative  UK newspaper in our dataset, creates a much closer association between woman and abuse, placing man farther away as seen in the PCA plot for this newspaper. The Times, a moderate UK newspaper, follows a similar pattern to the Guardian. The finding in the UK using relative position of man, abuse and woman is not replicated neither in Pakistan nor in Mexico’s WE models. The appendix shows figures 6, 7 and 8 with 2-dimensional visualizations for all newspapers grouped by political tilt for all three countries. For both Pakistani and Mexican newspapers it is difficult to draw conclusions from the PCA and TSNE plots of their respective embeddings. Yet by using sentiment analysis and semantic algebra interesting patterns start to arise. 
 
 \begin{figure}[H]
 	\center{\includegraphics[width=\textwidth]
@@ -367,7 +367,7 @@ When focusing on the results for newspapers in Mexico, we find that the words th
 	\end{tabular}
 \end{table}
 
-Finally, we go on to use pre-trained sentiment scoring models to find the average polarity of words in our keyword list for each newspaper in our dataset. In addition, we plot the results for the same analysis using the ubiquitous Glove embeddings and Spanish Billion Word (SBW) embeddings. Figure 3 highlights the results of this analysis. One interesting finding is the polarity relationship between newspaper embeddings and the topic agnostic Glove and SBW embeddings. In both Mexico and Pakistan, we find high variance across all newspapers and no obvious correlation between the relative polarity of any one newspaper with Glove or SBW. Nonetheless, in the UK we find that, on average, the polarity of keywords in The Guardian’s WE model tends to mirror, for most words, the polarity found in Glove embeddings. These results might be due to noise artifacts in our data generating process or could provide insights into the general semantic style employed by each newspaper when reporting on GBV. Because of the limitations in inferring semantic meaning in the respective depiction of GBV in our dataset we sought to further understand our corpus through passive/active voice detection.
+Finally, we go on to use pre-trained sentiment scoring models to find the average polarity of words in our keyword list for each newspaper in our dataset. In addition, we plot the results for the same analysis using the ubiquitous Glove embeddings and Spanish Billion Word (SBW) embeddings. Figure 4 highlights the results of this analysis. One interesting finding is the polarity relationship between newspaper embeddings and the topic agnostic Glove and SBW embeddings. In both Mexico and Pakistan, we find high variance across all newspapers and no obvious correlation between the relative polarity of any one newspaper with Glove or SBW. Nonetheless, in the UK we find that, on average, the polarity of keywords in The Guardian’s WE model tends to mirror, for most words, the polarity found in Glove embeddings. These results might be due to noise artifacts in our data generating process or could provide insights into the general semantic style employed by each newspaper when reporting on GBV. Because of the limitations in inferring semantic meaning in the respective depiction of GBV in our dataset we sought to further understand our corpus through passive/active voice detection.
 
 \begin{figure}[H]
 	\center{\includegraphics[width=\textwidth]
