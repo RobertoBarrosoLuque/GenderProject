@@ -23,6 +23,7 @@ The folder structure is as follows:
     - [Passive Voice](notebook_experiments/passive_voice): Jupyter notebooks used for the purpose of testing, implementing analyzing passive voice instances in GBV-related newspaper articles
     - [Word Embeddings](notebook_experiments/word_embeddings): Jupyter notebooks used for creating and analyzing word embeddings and word2vec models
 4. [web_sraping](web_scraping): This folder contains all helper functions used for web-scraping newsppaer articles from top 3 newspapers in each of the following countries: Mexico, UK, Pakistan
+5. [pre_process](pre_process): Pre-processing functions to clean and process newspaper articles.
 5. [word_embedding](word_embedding):
 6. [requirements.txt](requirements.text): Requirements file for this project
 
