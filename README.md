@@ -18,13 +18,13 @@ The folder structure is as follows:
     - [Pakistan](data/Pakistan): Data for Pakistan (in English)
     - [Analysis](data/analysis_results): Analysis
     - [Data Labelling](data/data_labelling): Manually Labelled GBV articles (for binary classification)
-- [notebook_experiments](notebook_experiments):
-    - [Binary Labelling](notebook_experiments/binary_labelling)
-    - [Passive Voice](notebook_experiments/passive_voice)
-    - [Word Embeddings](notebook_experiments/word_embeddings)
-- [web_sraping](web_scraping):
+- [notebook_experiments](notebook_experiments): Contains sub-folders with Jupyter notebooks for each aspect of the project 
+    - [Binary Labelling](notebook_experiments/binary_labelling): Jupyter notebook(s) used for the purpose of binary labelling – used Pytorch and LSTM 
+    - [Passive Voice](notebook_experiments/passive_voice): Jupyter notebooks used for the purpose of testing, implementing analyzing passive voice instances in GBV-related newspaper articles
+    - [Word Embeddings](notebook_experiments/word_embeddings): Jupyter notebooks used for creating and analyzing word embeddings and word2vec models
+- [web_sraping](web_scraping): This folder contains all helper functions used for web-scraping newsppaer articles from top 3 newspapers in each of the following countries: Mexico, UK, Pakistan
 - [word_embedding](word_embedding):
-- [requirements.txt](requirements.text):
+- [requirements.txt](requirements.text): Requirements file for this project
 
 
 ## Collaborators:
